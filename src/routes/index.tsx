@@ -168,7 +168,7 @@ function Index() {
                       <span className="font-medium text-foreground transition-colors group-hover:text-primary">
                         {item.title}
                       </span>
-                      <span className="shrink-0 text-xs uppercase tracking-widest text-muted-foreground">
+                       <span suppressHydrationWarning className="shrink-0 text-xs uppercase tracking-widest text-muted-foreground">
                         {item.source} · {formatAgo(item.pubDate)}
                       </span>
                     </a>
@@ -241,7 +241,7 @@ function LeadStory({ item }: { item: NewsItem }) {
     >
       <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.32em] text-primary">
         <span>Top of the wire · {item.source}</span>
-        <span className="text-muted-foreground">{formatAgo(item.pubDate)}</span>
+        <span suppressHydrationWarning className="text-muted-foreground">{formatAgo(item.pubDate)}</span>
       </div>
       <h2 className="mt-5 font-display text-3xl font-semibold leading-[1.05] tracking-tight text-foreground transition-colors group-hover:text-primary md:text-5xl">
         {item.title}
@@ -279,7 +279,7 @@ function StoryCard({ item }: { item: NewsItem }) {
         )}
       </div>
       <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-        <span>{formatAgo(item.pubDate)}</span>
+        <span suppressHydrationWarning>{formatAgo(item.pubDate)}</span>
         <ArrowUpRight className="h-3.5 w-3.5 text-primary opacity-0 transition-opacity group-hover:opacity-100" />
       </div>
     </a>
