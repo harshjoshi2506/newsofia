@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { ArrowUpRight, Globe2, Radio } from "lucide-react";
 import { getWorldNews, type NewsItem } from "@/lib/news.functions";
 import { cn } from "@/lib/utils";
+import meridianSymbol from "@/assets/meridian-symbol.png";
 
 const newsQuery = () =>
   queryOptions({
@@ -83,9 +84,18 @@ function Index() {
               <Globe2 className="h-3.5 w-3.5" />
               <span>Vol. I · {new Date().toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" })}</span>
             </div>
-            <h1 className="mt-3 font-display text-5xl font-bold leading-none tracking-tight md:text-7xl">
-              Meridian
-            </h1>
+            <div className="mt-3 flex items-center gap-4">
+              <img
+                src={meridianSymbol}
+                alt="Meridian emblem"
+                width={64}
+                height={64}
+                className="h-12 w-12 md:h-16 md:w-16"
+              />
+              <h1 className="font-display text-5xl font-bold leading-none tracking-tight md:text-7xl">
+                Meridian
+              </h1>
+            </div>
             <p className="mt-2 max-w-md text-sm text-muted-foreground">
               The world's headlines, gathered from every direction. Eight wire rooms, one page.
             </p>
