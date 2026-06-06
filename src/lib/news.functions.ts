@@ -80,7 +80,7 @@ function parseItems(xml: string, feed: Feed): NewsItem[] {
 async function fetchFeed(feed: Feed): Promise<NewsItem[]> {
   try {
     const res = await fetch(feed.url, {
-      headers: { "user-agent": "Mozilla/5.0 MeridianBot/1.0" },
+      headers: { "user-agent": "Mozilla/5.0 newsofiaBot/1.0" },
       signal: AbortSignal.timeout(8000),
     });
     if (!res.ok) return [];

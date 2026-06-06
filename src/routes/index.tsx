@@ -16,13 +16,13 @@ const newsQuery = () =>
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Meridian — World News from Many Sources" },
+      { title: "newsofia — World News from Many Sources" },
       {
         name: "description",
         content:
           "A real-time, source-by-source digest of world news from BBC, Al Jazeera, NPR, DW, France 24, Guardian, NYT and Reuters.",
       },
-      { property: "og:title", content: "Meridian — World News from Many Sources" },
+      { property: "og:title", content: "newsofia — World News from Many Sources" },
       {
         property: "og:description",
         content: "Read the world's headlines side-by-side, without picking a single point of view.",
@@ -87,13 +87,13 @@ function Index() {
             <div className="mt-3 flex items-center gap-4">
               <img
                 src={meridianSymbol}
-                alt="Meridian emblem"
+                alt="newsofia emblem"
                 width={64}
                 height={64}
                 className="h-12 w-12 md:h-16 md:w-16"
               />
               <h1 className="font-display text-5xl font-bold leading-none tracking-tight md:text-7xl">
-                Meridian
+                newsofia
               </h1>
             </div>
             <p className="mt-2 max-w-md text-sm text-muted-foreground">
@@ -182,7 +182,7 @@ function Index() {
 
       <footer className="mt-16 border-t border-border">
         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-3 px-6 py-6 text-xs uppercase tracking-[0.2em] text-muted-foreground md:px-10">
-          <span>© Meridian — A world news aggregator</span>
+          <span>© newsofia — A world news aggregator</span>
           <span className="text-primary">Pressed daily, around the clock.</span>
         </div>
       </footer>
