@@ -181,9 +181,26 @@ function Index() {
       </main>
 
       <footer className="mt-16 border-t border-border">
-        <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-3 px-6 py-6 text-xs uppercase tracking-[0.2em] text-muted-foreground md:px-10">
-          <span>© newsofia — A world news aggregator</span>
-          <span className="text-primary">Pressed daily, around the clock.</span>
+        <div className="mx-auto max-w-[1400px] px-6 py-10 md:px-10">
+          <div className="grid gap-8 md:grid-cols-[1fr_auto]">
+            <div>
+              <div className="text-[10px] font-semibold uppercase tracking-[0.28em] text-primary">
+                About the author
+              </div>
+              <h3 className="mt-3 font-display text-xl font-semibold tracking-tight text-foreground">
+                Hi, I'm Harsh
+              </h3>
+              <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
+                I'm currently halfway through my grade 12, and I made this website to help
+                gather all the news in one simple place where it's easy to navigate.
+              </p>
+            </div>
+            <div className="flex flex-col gap-2 text-xs uppercase tracking-[0.2em] text-muted-foreground md:items-end md:text-right">
+              <span>© newsofia — A world news aggregator</span>
+              <span className="text-foreground/80">Created by Harsh</span>
+              <span className="text-primary">Pressed daily, around the clock.</span>
+            </div>
+          </div>
         </div>
       </footer>
 
