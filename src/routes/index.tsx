@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { ArrowUpRight, Globe2, Radio } from "lucide-react";
 import { getWorldNews, type NewsItem } from "@/lib/news.functions";
 import { cn } from "@/lib/utils";
+import meridianSymbol from "@/assets/meridian-symbol.png";
 
 const newsQuery = () =>
   queryOptions({
