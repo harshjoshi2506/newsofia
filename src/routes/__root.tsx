@@ -85,6 +85,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Meridian — World News from Many Sources" },
+      { name: "twitter:description", content: "A curated, real-time digest of world news pulled from BBC, Al Jazeera, NPR, DW, France 24, Guardian and more." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d70f5b4a-c022-48e0-86df-ecd9dd79468b/id-preview-b01c8849--abd83231-8af1-45f2-aeca-fddcbdd0212a.lovable.app-1780730673834.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d70f5b4a-c022-48e0-86df-ecd9dd79468b/id-preview-b01c8849--abd83231-8af1-45f2-aeca-fddcbdd0212a.lovable.app-1780730673834.png" },
     ],
     links: [
       {
