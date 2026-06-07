@@ -59,6 +59,7 @@ function parseItems(xml: string, feed: Feed): NewsItem[] {
       const lm = block.match(/<link[^>]*href=["']([^"']+)["']/i);
       if (lm) link = lm[1];
     }
+    if (!/^https?:\/\//i.test(link)) link = "";
     const description = stripTags(pick(block, "description") || pick(block, "summary") || pick(block, "content"));
     const pubDate = pick(block, "pubDate") || pick(block, "published") || pick(block, "updated") || pick(block, "dc:date");
     if (!title || !link) continue;
