@@ -81,6 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "newsofia — World News from Many Sources" },
       { name: "description", content: "A curated, real-time digest of world news pulled from BBC, Al Jazeera, NPR, DW, France 24, Guardian and more." },
       { name: "author", content: "newsofia" },
+      { name: "google-site-verification", content: "googleee2794373996577f.html" },
       { property: "og:title", content: "newsofia — World News from Many Sources" },
       { property: "og:description", content: "A curated, real-time digest of world news pulled from BBC, Al Jazeera, NPR, DW, France 24, Guardian and more." },
       { property: "og:type", content: "website" },
